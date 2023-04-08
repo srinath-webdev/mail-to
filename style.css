@@ -1,0 +1,47 @@
+body {
+    background: #333;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    width: 100%;
+  }
+  
+  .email-links {
+    background: #fff;
+    border: 5px solid #222;
+    border-radius: 18px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    position: relative;
+    width: clamp(600px, 50%, 800px);
+  }
+  
+  .email-links:before {
+    content: "";
+    background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+    border: 5px solid #222;
+    border-radius: 18px;
+    height: 100%;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .email-link {
+    padding: 1rem;
+  }
+  
+  .email-link:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+  
+  .email-link svg {
+    filter: drop-shadow(1px 0 5px hsla(170, 0%, 0%, 0.5));
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+  }
